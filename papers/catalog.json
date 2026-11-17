@@ -1448,5 +1448,325 @@
     "summary": "EMNLP diagnostic work challenges whether video-QA gains genuinely rely on temporally grounded visual evidence.",
     "open_question": "Which temporal-QA improvements survive text-only and shuffled-video controls?",
     "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "shao26i",
+    "title": "Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "neuro_symbolic",
+      "skill_learning"
+    ],
+    "url": "https://proceedings.mlr.press/v306/shao26i.html",
+    "code_url": null,
+    "summary": "Induces modular condition-dependent programs from agent traces and logical constraints.",
+    "open_question": "How well do induced skills generalize to unanticipated state changes and unrelated task families?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "tian26m",
+    "title": "LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "neuro_symbolic",
+      "reasoning",
+      "verification"
+    ],
+    "url": "https://proceedings.mlr.press/v306/tian26m.html",
+    "code_url": null,
+    "summary": "Combines neural reasoning with solver feedback and repeated error correction.",
+    "open_question": "How often are formally verified solutions based on mistaken problem translations?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "cao26y",
+    "title": "Pushing the Boundaries of Natural Reasoning: Interleaved Bonus from Formal-Logic Verification in Language Models",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "reasoning",
+      "reinforcement_learning",
+      "verification"
+    ],
+    "url": "https://proceedings.mlr.press/v306/cao26y.html",
+    "code_url": null,
+    "summary": "Interleaves language model reasoning with formal logic checks as training guidance.",
+    "open_question": "Does step verification help when language statements admit multiple formal meanings?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "singh26d",
+    "title": "DiffuMamba: High-Throughput Diffusion LMs with Mamba Backbone",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "architectures",
+      "diffusion_language_models",
+      "efficient_ai"
+    ],
+    "url": "https://proceedings.mlr.press/v306/singh26d.html",
+    "code_url": null,
+    "summary": "Tests diffusion language models built around state-space mixers and hybrid attention.",
+    "open_question": "Are speed advantages robust at matched generation quality across different hardware and sequence lengths?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "he26p",
+    "title": "FedPissa: Towards Federated Personalized Adaptation of Foundation Models via LoRA Subspace Mapping",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "federated_learning",
+      "efficient_ai",
+      "lora"
+    ],
+    "url": "https://proceedings.mlr.press/v306/he26p.html",
+    "code_url": null,
+    "summary": "Adapts client-specific low-rank model updates using selective aggregation and subspace transformations.",
+    "open_question": "Can personalization remain stable through sequential non-IID drift and changing clients?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "fang26e",
+    "title": "Federated Sketching LoRA: A Flexible Framework for Heterogeneous Collaborative Fine-Tuning of LLMs",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "federated_learning",
+      "lora",
+      "heterogeneous_clients"
+    ],
+    "url": "https://proceedings.mlr.press/v306/fang26e.html",
+    "code_url": null,
+    "summary": "Introduces sketching for communication-conscious collaboration across unequal client devices.",
+    "open_question": "What are the utility and privacy tradeoffs for limited-memory mobile participants?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "zhai26c",
+    "title": "Distilling Task-Level Coordination Policies for Generalizable Multi-Agent Cooperation",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "multi_agent",
+      "coordination",
+      "distillation"
+    ],
+    "url": "https://proceedings.mlr.press/v306/zhai26c.html",
+    "code_url": null,
+    "summary": "Distills task-level decisions into lower-cost cooperative policies.",
+    "open_question": "Do coordination policies continue to work under partial information and adversarial teammates?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yadav26a",
+    "title": "More Capable, Less Cooperative? When LLMs Fail at Zero-Cost Collaboration",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "multi_agent",
+      "cooperation",
+      "evaluation"
+    ],
+    "url": "https://proceedings.mlr.press/v306/yadav26a.html",
+    "code_url": null,
+    "summary": "Investigates why individual model capability does not reliably predict cooperation.",
+    "open_question": "How do communication constraints and team composition affect observed cooperation failures?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "ma26v",
+    "title": "Do Sparse Autoencoders Identify Reasoning Features in Language Models?",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "interpretability",
+      "sparse_autoencoders",
+      "falsification"
+    ],
+    "url": "https://proceedings.mlr.press/v306/ma26v.html",
+    "code_url": "https://github.com/GeorgeMLP/reasoning-probing",
+    "summary": "Uses counterexample construction and token interventions to test the interpretation of alleged reasoning features.",
+    "open_question": "Which features survive stronger intervention-based falsification across model families?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "carlsson26a",
+    "title": "SEDRAS: Symbolically Evaluated Deep Research And Science",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "ai_for_science",
+      "benchmark",
+      "generalization"
+    ],
+    "url": "https://proceedings.mlr.press/v306/carlsson26a.html",
+    "code_url": null,
+    "summary": "Creates symbolically checkable, controllably difficult scientific reasoning workflows.",
+    "open_question": "Can performance on formal simulated research tasks predict real scientific reliability?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "mamba3_2026",
+    "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "architectures",
+      "state_space",
+      "efficient_ai"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/8abd2043b71a074278d5f687947bff9c-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Develops updated state-space sequence-modeling primitives for efficient inference.",
+    "open_question": "Where is the quality-memory-latency frontier relative to optimized Transformer baselines?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "hybrid_context26",
+    "title": "From Collapse to Control: Understanding and Extending Context Length in Emerging Hybrid Models via Universal Position Interpolation",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "architectures",
+      "long_context",
+      "state_space"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/c72fed3fc0f51d0a11f4e06ede3ef07b-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Studies how context scaling behaves in hybrid state-space and attention models.",
+    "open_question": "Does the new context-length capacity retain useful information during intervention-driven sequential learning?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "processverified26lean",
+    "title": "Process-Verified Reinforcement Learning for Theorem Proving via Lean",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "reasoning",
+      "reinforcement_learning",
+      "formal_verification"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/554a5982e26d0129f4038ad7a68fb3aa-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Studies process-level reinforcement signals supplied by a proof assistant.",
+    "open_question": "How well do process-verified training signals transfer outside formally checkable domains?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "carl26",
+    "title": "CARL: Preserving Causal Structure in Representation Learning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "causal_ai",
+      "representation_learning",
+      "multimodal"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d63cf0622eed012a17fe88fced64dcb8-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Examines whether learned cross-modal representations preserve causal relations.",
+    "open_question": "Can representations distinguish confounding from causal action effects on held-out interventions?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "cosmos_policy26",
+    "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "embodied_ai",
+      "robotics",
+      "world_models"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/748becc400a57c0e31cfe6a2e7951467-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Repurposes video-model representations to learn robot action policies.",
+    "open_question": "How robust are policies to unseen physical interaction dynamics and actuator delays?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "lora_privacy26",
+    "title": "Rethinking LoRA for Privacy-Preserving Federated Learning in Large Models",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "federated_learning",
+      "privacy",
+      "lora"
+    ],
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/34b13425b5ba8ad05d97b0043df52ed3-Abstract-Conference.html",
+    "code_url": null,
+    "summary": "Studies low-rank adaptation techniques within explicit privacy-constrained federated learning.",
+    "open_question": "How do formal privacy guarantees and worst-client utility change under continual updates?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "sciagentarena26",
+    "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "ai_for_science",
+      "agents",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2606.12736",
+    "code_url": null,
+    "summary": "Introduces a broad set of agentic tasks reflecting scientific workflows and domain-specific demands.",
+    "open_question": "Can measured task competence predict independent prospective experimental success?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "agentworld26",
+    "title": "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-Agent LLMs",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "multi_agent",
+      "agents",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2609.31590",
+    "code_url": null,
+    "summary": "Evaluates complex cooperative tasks across sustained multi-agent interaction.",
+    "open_question": "Can task-adaptive communication outperform always-chat approaches at equal aggregate token budgets?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "genie4_2026",
+    "title": "Genie 4: A New Generation of World Simulation",
+    "year": 2026,
+    "status": "research_report",
+    "topics": [
+      "world_models",
+      "interactive_simulation",
+      "multimodal"
+    ],
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "code_url": null,
+    "summary": "Google DeepMind describes interactive audiovisual world simulation capabilities.",
+    "open_question": "Do realistic interactive videos preserve physical intervention outcomes in independently checkable settings?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "cot_lifecycle26",
+    "title": "What affects chain-of-thought monitorability across the model lifecycle?",
+    "year": 2026,
+    "status": "research_report",
+    "topics": [
+      "interpretability",
+      "alignment",
+      "monitoring"
+    ],
+    "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle/",
+    "code_url": null,
+    "summary": "OpenAI examines how architecture, pretraining and post-training affect observing reasoning traces.",
+    "open_question": "Can independent action/side-effect monitoring remain robust if verbal reasoning becomes evasive?",
+    "reviewed_on": "2026-11-18"
   }
 ]

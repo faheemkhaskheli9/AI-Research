@@ -12,6 +12,8 @@ jobs:
           python-version: '3.11'
       - name: Validate paper metadata
         run: python scripts/validate_catalog.py
+      - name: Validate frontier research registry
+        run: python scripts/validate_frontiers.py
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Smoke experiment

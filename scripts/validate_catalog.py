@@ -12,6 +12,7 @@ ALLOWED_SOURCE_HOSTS = {
     "arxiv.org", "proceedings.mlr.press", "openreview.net",
     "hai.stanford.edu", "www.nature.com", "www.science.org",
     "aclanthology.org", "openaccess.thecvf.com", "proceedings.colm.cc",
+    "proceedings.iclr.cc", "deepmind.google", "alignment.openai.com",
 }
 REQUIRED = {
     "id", "title", "year", "status", "topics", "url",

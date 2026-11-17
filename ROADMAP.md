@@ -67,3 +67,14 @@ See [literature and adversarial review](research/MULTIMODAL_GROUNDED_INTELLIGENC
 - [ ] Add evidence replay and contradiction-based revision, then run preregistered ablations.
 - [ ] Extend evaluation to MemInStream, CaST-Bench or EgoMemReason without mixing differing task metrics.
 - [ ] Incorporate and verify any additional sources/findings from the full Deep Research report before making performance claims.
+
+
+## Twelve frontier literature reviews (2026-11-18)
+
+- [x] Source-linked scoping reviews and falsifiable proposals for each of the 12 frontier directions; see [index](research/areas/README.md).
+- [x] Cross-reference the reviews against a machine-readable research/paper inventory and enforce it in CI.
+- [ ] Preregister and execute **one** selected proposal with a resource-matched baseline and held-out task-family split.
+- [ ] Record repeated-seed results with confidence intervals, real budget accounting and negative findings.
+- [ ] Refresh each review when a major new primary-source result contradicts or strengthens its thesis.
+
+**Priority:** focus first on provenance-aware continual learning + agent execution verification (areas 01, 02, 05). Reviews are *not* 12 completed experimental implementations.

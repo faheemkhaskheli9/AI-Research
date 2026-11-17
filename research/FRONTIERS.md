@@ -50,3 +50,8 @@ Do not optimize for leaderboard scores alone; predefine failure criteria, seek c
 ## Detailed multimodal track
 
 The initial idea (temporal localization + extended audiovisual memory) has mature 2026 prior art; a plausible differentiated focus is **evidence-provenance-preserving revision under delayed or conflicting observations**. See [survey and falsifiable hypotheses](MULTIMODAL_GROUNDED_INTELLIGENCE.md). Do not claim that an event graph or hierarchical memory alone is novel.
+
+
+## Per-frontier research reviews
+
+See the [12-field literature index](areas/README.md) for individual source audits, specific hypotheses, reference benchmarks, baseline comparisons and adversarial caveats. Reviews are research proposals; experiments are not yet completed.

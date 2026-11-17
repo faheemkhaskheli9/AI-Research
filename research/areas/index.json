@@ -1,0 +1,194 @@
+[
+  {
+    "id": "01",
+    "slug": "01-continual-learning",
+    "title": "Continual learning and persistent memory",
+    "review_path": "research/areas/01-continual-learning.md",
+    "key_paper_ids": [
+      "dorovatas26a",
+      "ai26e",
+      "li26cv"
+    ],
+    "primary_metric": "held-out transfer and forgetting",
+    "resource_tier": "low_to_medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "02",
+    "slug": "02-long-horizon-agents",
+    "title": "Reliable long-horizon autonomous agents",
+    "review_path": "research/areas/02-long-horizon-agents.md",
+    "key_paper_ids": [
+      "yuan26osworld",
+      "shao26i",
+      "yao22react"
+    ],
+    "primary_metric": "full-task completion and recovery",
+    "resource_tier": "medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "03",
+    "slug": "03-reasoning-and-rl",
+    "title": "Reasoning and verifiable reinforcement learning",
+    "review_path": "research/areas/03-reasoning-and-rl.md",
+    "key_paper_ids": [
+      "yu26av",
+      "processverified26lean",
+      "cao26y"
+    ],
+    "primary_metric": "held-out verified steps and final correctness",
+    "resource_tier": "medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "04",
+    "slug": "04-world-models",
+    "title": "World models and physical intelligence",
+    "review_path": "research/areas/04-world-models.md",
+    "key_paper_ids": [
+      "hafner23dreamer",
+      "assran25vjepa2",
+      "genie4_2026"
+    ],
+    "primary_metric": "OOD planning regret and predictive calibration",
+    "resource_tier": "low_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "05",
+    "slug": "05-interpretability-control",
+    "title": "Interpretability and trustworthy AI control",
+    "review_path": "research/areas/05-interpretability-control.md",
+    "key_paper_ids": [
+      "ma26v",
+      "cot_lifecycle26",
+      "yu26av"
+    ],
+    "primary_metric": "policy-violation recall and false-block rate",
+    "resource_tier": "medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "06",
+    "slug": "06-new-architectures",
+    "title": "New AI model architectures",
+    "review_path": "research/areas/06-new-architectures.md",
+    "key_paper_ids": [
+      "mamba3_2026",
+      "singh26d",
+      "hybrid_context26"
+    ],
+    "primary_metric": "quality at matched compute and peak memory",
+    "resource_tier": "medium_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "07",
+    "slug": "07-causal-neurosymbolic",
+    "title": "Causal and neuro-symbolic methods",
+    "review_path": "research/areas/07-causal-neurosymbolic.md",
+    "key_paper_ids": [
+      "tian26m",
+      "shao26i",
+      "carl26"
+    ],
+    "primary_metric": "interventional error under shifted distributions",
+    "resource_tier": "low_to_medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "08",
+    "slug": "08-multimodal-grounding",
+    "title": "Multimodal temporal grounding",
+    "review_path": "research/areas/08-multimodal-grounding.md",
+    "key_paper_ids": [
+      "radwan26sonico1",
+      "yeo26worldmm",
+      "zhang26castbench"
+    ],
+    "primary_metric": "temporal evidence accuracy and attribution",
+    "resource_tier": "medium_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "09",
+    "slug": "09-ai-for-science",
+    "title": "AI for scientific discovery",
+    "review_path": "research/areas/09-ai-for-science.md",
+    "key_paper_ids": [
+      "sciagentarena26",
+      "carlsson26a",
+      "lu24scientist"
+    ],
+    "primary_metric": "blinded scientific-claim validity and replication",
+    "resource_tier": "low_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "10",
+    "slug": "10-embodied-robotics",
+    "title": "Embodied AI and robotics",
+    "review_path": "research/areas/10-embodied-robotics.md",
+    "key_paper_ids": [
+      "cosmos_policy26",
+      "brohan23rt2",
+      "assran25vjepa2"
+    ],
+    "primary_metric": "safe task success under dynamics shift",
+    "resource_tier": "medium_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "11",
+    "slug": "11-efficient-federated-ai",
+    "title": "Efficient and federated AI",
+    "review_path": "research/areas/11-efficient-federated-ai.md",
+    "key_paper_ids": [
+      "he26p",
+      "fang26e",
+      "lora_privacy26"
+    ],
+    "primary_metric": "worst-client retention per MB and privacy budget",
+    "resource_tier": "low_to_high",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "12",
+    "slug": "12-multiagent-collective",
+    "title": "Multi-agent learning and collective intelligence",
+    "review_path": "research/areas/12-multiagent-collective.md",
+    "key_paper_ids": [
+      "zhai26c",
+      "yadav26a",
+      "agentworld26"
+    ],
+    "primary_metric": "team return per communication/token budget",
+    "resource_tier": "low_to_medium",
+    "literature_status": "scoping_review_2026_11_18",
+    "experiment_status": "proposed_not_executed",
+    "reviewed_on": "2026-11-18"
+  }
+]
