@@ -2,6 +2,7 @@
 
 Concise, source-linked **original notes**, not copied textbook chapters or full paper text.
 
+- [How AI and LLM models are researched and built (beginner guide)](how_ai_research_works.md)
 - [Continual learning and memory](continual_learning.md)
 - [Research evaluation and reproducibility](evaluation.md)
 - [World models and causal generalization](world_models.md)

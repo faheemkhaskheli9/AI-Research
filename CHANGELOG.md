@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-18 — Beginner guide to AI research
+- Added `knowledge/how_ai_research_works.md`: research loop, LLM build pipeline, common research pitfalls, roles, tools, starter roadmap, reading list and glossary.
+- **No new scientific results are claimed.**
+
 ## 2026-11-18 — Voice-agent research track
 - Added AI research areas overview and a multilingual voice-agent strategy (Urdu/Sindhi).
 - Added 26 speech, multilingual, evaluation, retrieval and alignment papers to the catalog.
