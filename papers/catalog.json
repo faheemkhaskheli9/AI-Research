@@ -366,5 +366,411 @@
     "summary": "Investigates model-size and training-token allocation under a fixed compute budget.",
     "open_question": "Do compute-optimal scaling rules remain stable for multimodal continual learners?",
     "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "vaswani17attention",
+    "title": "Attention Is All You Need",
+    "year": 2017,
+    "status": "peer_reviewed",
+    "topics": [
+      "architectures",
+      "language_models"
+    ],
+    "url": "https://arxiv.org/abs/1706.03762",
+    "code_url": null,
+    "summary": "Introduces the transformer, the architecture behind modern language and speech models.",
+    "open_question": "Which attention alternatives keep quality while cutting cost for long audio sequences?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "hu21lora",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "year": 2021,
+    "status": "peer_reviewed",
+    "topics": [
+      "efficient_ai",
+      "fine_tuning"
+    ],
+    "url": "https://arxiv.org/abs/2106.09685",
+    "code_url": null,
+    "summary": "Parameter-efficient fine-tuning by learning low-rank weight updates.",
+    "open_question": "How much low-resource-language data does LoRA need to close the gap with full fine-tuning?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wei22cot",
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "year": 2022,
+    "status": "peer_reviewed",
+    "topics": [
+      "reasoning",
+      "prompting"
+    ],
+    "url": "https://arxiv.org/abs/2201.11903",
+    "code_url": null,
+    "summary": "Shows that prompting for intermediate steps improves multi-step reasoning in large models.",
+    "open_question": "Does chain-of-thought help equally when prompts and answers are in Urdu?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "ouyang22instructgpt",
+    "title": "Training language models to follow instructions with human feedback",
+    "year": 2022,
+    "status": "peer_reviewed",
+    "topics": [
+      "alignment",
+      "post_training"
+    ],
+    "url": "https://arxiv.org/abs/2203.02155",
+    "code_url": null,
+    "summary": "Instruction tuning with reinforcement learning from human feedback (InstructGPT).",
+    "open_question": "How well does preference data collected in English transfer to low-resource languages?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "rafailov23dpo",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "alignment",
+      "post_training"
+    ],
+    "url": "https://arxiv.org/abs/2305.18290",
+    "code_url": null,
+    "summary": "Optimizes preferences directly without training a separate reward model.",
+    "open_question": "Can small native-speaker preference sets fix tone and politeness errors in Urdu assistants?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "lewis20rag",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "year": 2020,
+    "status": "peer_reviewed",
+    "topics": [
+      "retrieval",
+      "grounding"
+    ],
+    "url": "https://arxiv.org/abs/2005.11401",
+    "code_url": null,
+    "summary": "Combines a retriever with a generator so answers are grounded in retrieved documents.",
+    "open_question": "How much does cross-lingual retrieval (Urdu query, English documents) reduce answer quality?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "asai23selfrag",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "retrieval",
+      "grounding",
+      "feedback"
+    ],
+    "url": "https://arxiv.org/abs/2310.11511",
+    "code_url": null,
+    "summary": "Trains a model to decide when to retrieve and to critique its own outputs.",
+    "open_question": "Are self-critique signals reliable enough to trigger safe escalation in voice agents?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "liu23lost",
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_context",
+      "retrieval",
+      "evaluation"
+    ],
+    "url": "https://arxiv.org/abs/2307.03172",
+    "code_url": null,
+    "summary": "Finds models use information at the start and end of long contexts better than the middle.",
+    "open_question": "Does position bias get worse for low-resource-language context?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "packer23memgpt",
+    "title": "MemGPT: Towards LLMs as Operating Systems",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "memory",
+      "agents",
+      "systems"
+    ],
+    "url": "https://arxiv.org/abs/2310.08560",
+    "code_url": null,
+    "summary": "Tiered memory management that pages information in and out of a limited context window.",
+    "open_question": "Which memory tier policies keep stale facts out of long-running support conversations?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "zheng23judge",
+    "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "evaluation",
+      "llm_as_judge"
+    ],
+    "url": "https://arxiv.org/abs/2306.05685",
+    "code_url": null,
+    "summary": "Studies agreement between strong LLM judges and humans and documents position, verbosity and self-enhancement biases.",
+    "open_question": "Does judge-human agreement hold for Urdu and Sindhi responses?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "liu23geval",
+    "title": "G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "evaluation",
+      "llm_as_judge"
+    ],
+    "url": "https://arxiv.org/abs/2303.16634",
+    "code_url": null,
+    "summary": "Rubric-guided LLM evaluation with chain-of-thought and probability-weighted scores.",
+    "open_question": "Do rubrics written in English transfer to judging Urdu outputs?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wang23fair",
+    "title": "Large Language Models are not Fair Evaluators",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "evaluation",
+      "llm_as_judge",
+      "bias"
+    ],
+    "url": "https://arxiv.org/abs/2305.17926",
+    "code_url": null,
+    "summary": "Shows LLM judges are sensitive to answer order and proposes calibration methods.",
+    "open_question": "Is position bias larger when the judged answers are in a low-resource language?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yao24taubench",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "year": 2024,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "benchmark",
+      "evaluation",
+      "reliability"
+    ],
+    "url": "https://arxiv.org/abs/2406.12045",
+    "code_url": "https://github.com/sierra-research/tau-bench",
+    "summary": "Simulated-user benchmark for tool-using agents with domain policies; introduces pass^k to measure consistency across trials.",
+    "open_question": "What does a τ-bench-style benchmark look like for spoken Urdu customer-support tasks?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "baevski20wav2vec2",
+    "title": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+    "year": 2020,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "self_supervised"
+    ],
+    "url": "https://arxiv.org/abs/2006.11477",
+    "code_url": null,
+    "summary": "Self-supervised speech pretraining that enables ASR with very little labeled data.",
+    "open_question": "How few labeled minutes of Sindhi speech give usable ASR after self-supervised pretraining?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "babu21xlsr",
+    "title": "XLS-R: Self-supervised Cross-lingual Speech Representation Learning at Scale",
+    "year": 2021,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "multilingual",
+      "low_resource"
+    ],
+    "url": "https://arxiv.org/abs/2111.09296",
+    "code_url": null,
+    "summary": "Large cross-lingual wav2vec 2.0 models pretrained on speech from many languages.",
+    "open_question": "Which related languages transfer best to Sindhi ASR?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "radford22whisper",
+    "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "year": 2022,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "multilingual",
+      "asr"
+    ],
+    "url": "https://arxiv.org/abs/2212.04356",
+    "code_url": "https://github.com/openai/whisper",
+    "summary": "Whisper: multilingual ASR and translation trained on large weakly supervised web audio.",
+    "open_question": "How does Whisper perform on Urdu-English code-switched and Roman Urdu speech?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "pratap23mms",
+    "title": "Scaling Speech Technology to 1,000+ Languages",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "multilingual",
+      "low_resource"
+    ],
+    "url": "https://arxiv.org/abs/2305.13516",
+    "code_url": null,
+    "summary": "Massively Multilingual Speech (MMS): ASR, TTS and language ID for over 1,000 languages.",
+    "open_question": "Is MMS or Whisper the stronger baseline for Sindhi?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "conneau22fleurs",
+    "title": "FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech",
+    "year": 2022,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "multilingual",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2205.12446",
+    "code_url": null,
+    "summary": "N-way parallel speech benchmark in 102 languages built on FLoRes-101, with about 12 hours per language.",
+    "open_question": "How representative is read FLEURS speech of real conversational Urdu?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "ardila19commonvoice",
+    "title": "Common Voice: A Massively-Multilingual Speech Corpus",
+    "year": 2019,
+    "status": "peer_reviewed",
+    "topics": [
+      "speech",
+      "multilingual",
+      "dataset"
+    ],
+    "url": "https://arxiv.org/abs/1912.06670",
+    "code_url": null,
+    "summary": "Crowdsourced, openly licensed multilingual speech corpus with community validation.",
+    "open_question": "How much do speaker and accent imbalances in crowdsourced Urdu data bias evaluation?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "seamless23m4t",
+    "title": "SeamlessM4T: Massively Multilingual & Multimodal Machine Translation",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "speech",
+      "translation",
+      "multilingual"
+    ],
+    "url": "https://arxiv.org/abs/2308.11596",
+    "code_url": null,
+    "summary": "Unified model for speech and text translation across many languages.",
+    "open_question": "Can speech-to-speech translation serve as a fallback for languages with weak dialogue models?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "defossez24moshi",
+    "title": "Moshi: a speech-text foundation model for real-time dialogue",
+    "year": 2024,
+    "status": "preprint",
+    "topics": [
+      "speech",
+      "spoken_dialogue",
+      "real_time"
+    ],
+    "url": "https://arxiv.org/abs/2410.00037",
+    "code_url": "https://github.com/kyutai-labs/moshi",
+    "summary": "Full-duplex speech-to-speech dialogue model with about 200 ms practical latency and an inner-monologue text stream.",
+    "open_question": "What would it take to adapt full-duplex dialogue models to Urdu?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "kaplan20scaling",
+    "title": "Scaling Laws for Neural Language Models",
+    "year": 2020,
+    "status": "preprint",
+    "topics": [
+      "scaling",
+      "language_models"
+    ],
+    "url": "https://arxiv.org/abs/2001.08361",
+    "code_url": null,
+    "summary": "Reports power-law relationships between loss and model size, data and compute.",
+    "open_question": "Do scaling laws hold for low-resource languages with limited data?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "bai22constitutional",
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "year": 2022,
+    "status": "preprint",
+    "topics": [
+      "alignment",
+      "safety",
+      "feedback"
+    ],
+    "url": "https://arxiv.org/abs/2212.08073",
+    "code_url": null,
+    "summary": "Trains assistants with AI feedback guided by a written set of principles.",
+    "open_question": "Can principle-guided feedback be written and checked in Urdu?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "cobbe21gsm8k",
+    "title": "Training Verifiers to Solve Math Word Problems",
+    "year": 2021,
+    "status": "preprint",
+    "topics": [
+      "reasoning",
+      "verification",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2110.14168",
+    "code_url": null,
+    "summary": "Introduces GSM8K and shows trained verifiers improve answer selection.",
+    "open_question": "Do verifiers trained in English catch errors in translated reasoning tasks?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "schick23toolformer",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "tools"
+    ],
+    "url": "https://arxiv.org/abs/2302.04761",
+    "code_url": null,
+    "summary": "Self-supervised method for teaching a model when and how to call external tools.",
+    "open_question": "How often do ASR errors corrupt tool arguments in spoken agents?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wang23voyager",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "memory",
+      "continual_learning"
+    ],
+    "url": "https://arxiv.org/abs/2305.16291",
+    "code_url": null,
+    "summary": "Lifelong-learning agent that grows a reusable skill library in Minecraft.",
+    "open_question": "Do skill libraries transfer when the task language changes?",
+    "reviewed_on": "2026-11-18"
   }
 ]

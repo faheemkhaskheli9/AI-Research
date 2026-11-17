@@ -13,3 +13,7 @@ results/
 *.pth
 *.ckpt
 *.safetensors
+*.wav
+*.mp3
+*.flac
+data/raw/

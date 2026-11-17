@@ -33,3 +33,13 @@ The initial repository is an **evidence-organized research workspace**, not a co
 - Quarterly: reassess thesis using negative evidence and recent peer-reviewed papers.
 
 **Definition of done for experiments:** executable code, tests, baseline comparisons, resource reporting, reproducible results and explicit limitations.
+
+## Voice-agent track (Urdu / Sindhi)
+See [VOICE_AGENTS_STRATEGY.md](research/VOICE_AGENTS_STRATEGY.md).
+- [x] Language-aware WER/CER and judge-agreement toolkit with tests.
+- [ ] Reproduce Whisper WER on FLEURS Urdu test.
+- [ ] Annotation guide and task schema for a pilot Urdu/Sindhi/code-switched set (~200 consented utterances).
+- [ ] Benchmark ASR and realtime voice models on the pilot set.
+- [ ] Judge–human agreement study, Urdu vs. English, with bootstrap CIs.
+- [ ] Entity error rate and pass^k task metrics.
+- [ ] Workshop submission; then public dataset v1 on Hugging Face.

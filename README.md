@@ -1,13 +1,15 @@
 # AI Research
 
-A reproducible, source-linked research workspace for studying **lifelong learning, reliable autonomous agents, reasoning, world models, and grounded intelligence**.
+A reproducible, source-linked research workspace for studying **lifelong learning, reliable autonomous agents, reasoning, world models, and grounded intelligence**, with a second track on **reliable multilingual voice agents for Urdu and Sindhi**.
 
 > **Status:** research knowledge base and educational baselines. No new scientific results are claimed.
 
 ## Start here
 
 - [Research map](research/FRONTIERS.md) — twelve active research directions and open problems.
+- [AI research areas overview](research/AI_RESEARCH_AREAS.md) — beginner-friendly map of the field.
 - [Research strategy](research/STRATEGY.md) — focused research program, hypotheses, milestones, and adversarial review.
+- [Voice-agent strategy](research/VOICE_AGENTS_STRATEGY.md) — Urdu/Sindhi voice-agent research track.
 - [Paper catalog](papers/catalog.json) — curated references with original source links and evidence status.
 - [Reading guide](papers/READING_GUIDE.md) — reading order, reproductions, and literature note conventions.
 - [Knowledge base](knowledge/README.md) — definitions and methodological guidance.
@@ -17,11 +19,12 @@ A reproducible, source-linked research workspace for studying **lifelong learnin
 
 ## Quick start
 
-Requires Python 3.10+; the baseline uses the standard library only.
+Requires Python 3.10+; all code uses the standard library only.
 
 ```bash
 python -m unittest discover -s tests -v
 python -m experiments.continual_memory.run --seed 42 --episodes 240
+python -m experiments.voice_eval.run_demo
 python scripts/validate_catalog.py
 ```
 

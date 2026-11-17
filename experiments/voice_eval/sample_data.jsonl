@@ -1,0 +1,12 @@
+{"id": "ur-001", "lang": "ur", "reference": "میرا آرڈر ابھی تک نہیں پہنچا۔", "hypothesis": "میرا آڈر ابھی تک نہیں پہنچا", "human_label": "pass", "judge_label": "pass"}
+{"id": "ur-002", "lang": "ur", "reference": "مجھے اپنی انوائس کی کاپی چاہیے۔", "hypothesis": "مجھے اپنی انوائس کی کاپی چاہئے", "human_label": "pass", "judge_label": "fail"}
+{"id": "ur-003", "lang": "ur", "reference": "ڈاکٹر سے ملاقات کا وقت چاہیے۔", "hypothesis": "ڈاکٹر سے ملاقات کا وقت چاہیے", "human_label": "pass", "judge_label": "pass"}
+{"id": "ur-004", "lang": "ur", "reference": "میرا آرڈر نمبر ۴۵۲ ہے۔", "hypothesis": "میرا آرڈر نمبر 452 ہے", "human_label": "pass", "judge_label": "pass"}
+{"id": "ur-005", "lang": "ur", "reference": "بخار تین دن سے ہے۔", "hypothesis": "بخار دن سے ہے", "human_label": "fail", "judge_label": "pass"}
+{"id": "sd-001", "lang": "sd", "reference": "مان ڊاڪٽر سان ملڻ چاهيان ٿو.", "hypothesis": "مان ڊاڪٽر سان ملڻ چاهيان ٿو", "human_label": "pass", "judge_label": "pass"}
+{"id": "sd-002", "lang": "sd", "reference": "منهنجو آرڊر اڃا نه پهتو آهي.", "hypothesis": "منهنجو آرڊر نه پهتو آهي", "human_label": "fail", "judge_label": "fail"}
+{"id": "rl-001", "lang": "ur-latn", "reference": "please mera order cancel kar dein", "hypothesis": "please mera order cancel kar den", "human_label": "pass", "judge_label": "pass"}
+{"id": "rl-002", "lang": "ur-latn", "reference": "mujhe invoice ki copy chahiye", "hypothesis": "mujhe invoice ki copy chahye", "human_label": "pass", "judge_label": "fail"}
+{"id": "en-001", "lang": "en", "reference": "Where is my order?", "hypothesis": "where is my order", "human_label": "pass", "judge_label": "pass"}
+{"id": "en-002", "lang": "en", "reference": "I need a copy of my invoice.", "hypothesis": "I need a copy of the invoice", "human_label": "pass", "judge_label": "pass"}
+{"id": "en-003", "lang": "en", "reference": "I have had a fever for three days.", "hypothesis": "I have had a fever for days", "human_label": "fail", "judge_label": "fail"}

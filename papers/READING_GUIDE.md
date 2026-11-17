@@ -35,3 +35,17 @@ Use [paper note template](../knowledge/reading_notes/TEMPLATE.md). Extract: prob
 5. A claim about performance belongs to the paper's authors until independently reproduced.
 
 Useful discovery channels: [PMLR](https://proceedings.mlr.press/), [OpenReview](https://openreview.net/), [arXiv](https://arxiv.org/), [NeurIPS](https://neurips.cc/), [Stanford AI Index](https://hai.stanford.edu/ai-index).
+
+## Voice-agent track (Urdu / Sindhi)
+
+See [voice-agent strategy](../research/VOICE_AGENTS_STRATEGY.md).
+
+1. `radford22whisper` → `baevski20wav2vec2` → `babu21xlsr` — speech recognition foundations.
+2. `ardila19commonvoice`, `conneau22fleurs` — datasets that include Urdu.
+3. `pratap23mms`, `seamless23m4t` — massively multilingual speech.
+4. `defossez24moshi` — real-time full-duplex spoken dialogue.
+5. `zheng23judge` → `wang23fair` → `liu23geval` — LLM-as-a-Judge and its biases.
+6. `yao24taubench` — agent reliability across repeated trials (pass^k).
+7. `lewis20rag`, `asai23selfrag`, `liu23lost` — grounding.
+
+Priority reproductions: Whisper WER on FLEURS Urdu; judge–human agreement on a small Urdu set; pass^k on a toy agent.

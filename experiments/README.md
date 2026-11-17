@@ -38,3 +38,23 @@ All metrics are computed in-memory and emitted as JSON, including `pre_drift`, `
 Use actual CL-Bench or MemoryBench tasks, run paired multiple seeds, match retrieval and storage budgets, add an equal-context baseline, and test whether generalized skills outperform a naive cache.
 
 See [research strategy](../research/STRATEGY.md).
+
+## 02 — Voice-agent evaluation toolkit (`voice_eval`)
+
+Standard-library tools for scoring Urdu (`ur`), Sindhi (`sd`), Roman Urdu (`ur-latn`) and English (`en`) outputs.
+
+| File | Purpose |
+|---|---|
+| `metrics.py` | Language-aware normalization, WER, CER, corpus-level scores |
+| `judge_agreement.py` | Percent agreement, Cohen's κ, bootstrap confidence intervals |
+| `run_demo.py` | Per-language summary over a JSONL file |
+| `sample_data.jsonl` | 12 hand-written toy examples — **not real model output** |
+
+```bash
+python -m experiments.voice_eval.run_demo
+python -m experiments.voice_eval.run_demo --data my_results.jsonl
+```
+
+JSONL fields: `id`, `lang`, `reference`, `hypothesis`, `human_label`, `judge_label`.
+
+**Limitations:** the sample is illustrative only; the Urdu normalizer is not applied to Sindhi (different yeh/kaf conventions, see [low_resource_speech.md](../knowledge/low_resource_speech.md)); spelling variants such as `چاہیے`/`چاہئے` still count as errors. Record `NORMALIZER_VERSION` with every reported number.

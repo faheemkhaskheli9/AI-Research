@@ -16,3 +16,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Smoke experiment
         run: python -m experiments.continual_memory.run --episodes 90 --train-episodes 60 --seed 42
+      - name: Smoke voice eval
+        run: python -m experiments.voice_eval.run_demo

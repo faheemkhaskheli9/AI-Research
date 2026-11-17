@@ -1,0 +1,21 @@
+# Glossary
+
+- **ASR** — Automatic Speech Recognition (speech → text).
+- **TTS** — Text-to-Speech.
+- **Full-duplex** — a voice system that can listen and speak at the same time (handles interruptions).
+- **Cascaded voice agent** — ASR → LLM → TTS pipeline. Errors propagate between stages.
+- **Speech-to-speech model** — one model maps audio input to audio output directly.
+- **WER** — Word Error Rate = (substitutions + deletions + insertions) / reference words.
+- **CER** — Character Error Rate; same formula on characters. Useful when word boundaries are unreliable.
+- **Code-switching** — mixing languages in one utterance (e.g. "mera order cancel kar dein").
+- **Roman Urdu** — Urdu written in Latin script; spelling is not standardized.
+- **Low-resource language** — a language with little labeled data or tooling.
+- **LLM-as-a-Judge** — using an LLM to grade model outputs.
+- **Cohen's κ (kappa)** — agreement between two raters corrected for chance. 1 = perfect, 0 = chance level.
+- **pass^k** — probability that an agent succeeds on all k independent trials of the same task (reliability).
+- **pass@k** — probability that at least one of k attempts succeeds (capability).
+- **RAG** — Retrieval-Augmented Generation; grounding answers in retrieved documents.
+- **Catastrophic forgetting** — losing old knowledge when learning new knowledge.
+- **Stale memory** — a stored fact that has since changed in the world.
+- **Contamination** — benchmark data leaking into training data, inflating scores.
+- **Bootstrap CI** — confidence interval from resampling the test set; needed for small benchmarks.
