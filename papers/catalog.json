@@ -1119,5 +1119,100 @@
     "summary": "MLLM builds an event-based scene graph as an intermediate reasoning step, trained with RL to reduce hallucination.",
     "open_question": "Are the generated graphs temporally accurate, or only plausible?",
     "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "turpin23unfaithfulcot",
+    "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "interpretability",
+      "reasoning",
+      "faithfulness"
+    ],
+    "url": "https://arxiv.org/abs/2305.04388",
+    "code_url": null,
+    "summary": "Shows that biasing features can influence model answers without being acknowledged in generated explanations.",
+    "open_question": "Can tool-level evidence detect the same hidden influences when explanations remain plausible?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "greenblatt23control",
+    "title": "AI Control: Improving Safety Despite Intentional Subversion",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "ai_control",
+      "agents",
+      "monitoring"
+    ],
+    "url": "https://arxiv.org/abs/2312.06942",
+    "code_url": "https://github.com/rgreenblatt/control-evaluations",
+    "summary": "Studies control protocols that combine trusted and untrusted models with limited trusted review under intentional subversion.",
+    "open_question": "How do safety–utility tradeoffs change with persistent agent memory and multi-tool side effects?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "heimersheim24patching",
+    "title": "How to Use and Interpret Activation Patching",
+    "year": 2024,
+    "status": "preprint",
+    "topics": [
+      "interpretability",
+      "causal_interventions"
+    ],
+    "url": "https://arxiv.org/abs/2404.15255",
+    "code_url": null,
+    "summary": "Methodological discussion of activation patching and the limits of inference from intervention results.",
+    "open_question": "Can targeted activation interventions predict unauthorized tool choices on unseen tasks?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "agentdojo24",
+    "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "year": 2024,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "security",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2406.13352",
+    "code_url": null,
+    "summary": "Provides an environment for evaluating indirect prompt injection against tool-using assistants.",
+    "open_question": "Which pre-execution policy monitors retain low false positives against held-out injection strategies?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "shadearena25",
+    "title": "SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "ai_control",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2506.15740",
+    "code_url": null,
+    "summary": "Evaluates sabotage opportunities and monitoring capabilities in agent trajectories.",
+    "open_question": "Do monitors trained on sabotage examples generalize to new tasks and different agents?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "weakstrongmonitor25",
+    "title": "Reliable Weak-to-Strong Monitoring of LLM Agents",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "ai_control",
+      "security"
+    ],
+    "url": "https://arxiv.org/abs/2508.19461",
+    "code_url": null,
+    "summary": "Develops a monitor red-teaming workflow spanning agent awareness, adversarial strategies and computer-use settings.",
+    "open_question": "How should adaptive monitor attacks be budgeted and assessed at deployment-like base rates?",
+    "reviewed_on": "2026-11-18"
   }
 ]
