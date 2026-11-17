@@ -772,5 +772,352 @@
     "summary": "Lifelong-learning agent that grows a reusable skill library in Minecraft.",
     "open_question": "Do skill libraries transfer when the task language changes?",
     "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "radwan26sonico1",
+    "title": "SONIC-O1: A Real-World Benchmark for Evaluating Multimodal Large Language Models on Audio-Video Understanding",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "multimodal",
+      "benchmark",
+      "temporal_grounding",
+      "fairness"
+    ],
+    "url": "https://arxiv.org/abs/2601.21666",
+    "code_url": "https://github.com/vectorinstitute/sonic-o1",
+    "summary": "Human-verified audio-video benchmark (~60 h, 231 clips, 13 domains) for summarization, MCQ and temporal localization; reports a large closed-vs-open gap on localization and demographic gaps. NeurIPS 2026 workshop poster.",
+    "open_question": "Does adding explicit audio events close the open-model gap on temporal localization?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "zhang25timelens",
+    "title": "TimeLens: Rethinking Video Temporal Grounding with Multimodal LLMs",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "video",
+      "data_quality"
+    ],
+    "url": "https://arxiv.org/abs/2512.14698",
+    "code_url": null,
+    "summary": "Strong grounding baseline built mainly by improving data quality and simple design choices; argues MLLMs know 'what' but not 'when'.",
+    "open_question": "Which label-quality fixes matter most for audio-visual grounding?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "zhu26timelens2",
+    "title": "TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "video",
+      "reinforcement_learning"
+    ],
+    "url": "https://arxiv.org/abs/2607.17423",
+    "code_url": null,
+    "summary": "Predicts sets of evidence intervals; SFT then GRPO with IoU plus a temporal Wasserstein reward; 93K-instance dataset. Vision-only evaluation.",
+    "open_question": "Does the recipe transfer when audio and subtitles are added?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "groundvts26",
+    "title": "GroundVTS: Visual Token Sampling in Multimodal Large Language Models for Video Temporal Grounding",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "efficiency"
+    ],
+    "url": "https://arxiv.org/abs/2604.02093",
+    "code_url": null,
+    "summary": "Query-guided filtering of visual tokens before the LLM to keep time-relevant information.",
+    "open_question": "Can audio cues guide token selection too?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "han26slotvtg",
+    "title": "SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "generalization"
+    ],
+    "url": "https://arxiv.org/abs/2603.25733",
+    "code_url": null,
+    "summary": "Object-centric slot adapter to improve out-of-domain temporal grounding.",
+    "open_question": "Do action-centric units generalize better than object-centric ones?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "nie26emground",
+    "title": "E.M.Ground: A Temporal Grounding Vid-LLM with Holistic Event Perception and Matching",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "events"
+    ],
+    "url": "https://arxiv.org/abs/2602.05215",
+    "code_url": null,
+    "summary": "Models events as continuous, coherent units rather than isolated frames for grounding.",
+    "open_question": "How does event-level perception interact with audio boundaries?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "du26tgheads",
+    "title": "MLLMs Know When Before Speaking: Revealing and Recovering Temporal Grounding via Attention Cues",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "interpretability"
+    ],
+    "url": "https://arxiv.org/abs/2605.21954",
+    "code_url": null,
+    "summary": "Finds a sparse set of attention heads that focus on the correct interval even when generated timestamps are wrong.",
+    "open_question": "Do the same heads exist in omni (audio-video) models?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wang25timer1",
+    "title": "Time-R1: Post-Training Large Vision Language Model for Temporal Video Grounding",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "reinforcement_learning"
+    ],
+    "url": "https://arxiv.org/abs/2503.13377",
+    "code_url": null,
+    "summary": "RL post-training with verifiable IoU reward; strong results from ~2.5K training samples; introduces TVGBench.",
+    "open_question": "Is the data efficiency preserved for long audio-visual videos?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li25tempsampr1",
+    "title": "TempSamp-R1: Effective Temporal Sampling with Reinforcement Fine-Tuning for Video LLMs",
+    "year": 2025,
+    "status": "peer_reviewed",
+    "topics": [
+      "temporal_grounding",
+      "reinforcement_learning"
+    ],
+    "url": "https://arxiv.org/abs/2509.18056",
+    "code_url": "https://github.com/HVision-NKU/TempSamp-R1",
+    "summary": "Shows on-policy GRPO explores poorly in large temporal spaces; mixes ground-truth guidance into policy updates. NeurIPS 2025.",
+    "open_question": "Which off-policy signals help most when timestamps come from two modalities?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wu25tempr1",
+    "title": "TempR1: Improving Temporal Understanding of MLLMs via Temporal-Aware Multi-Task Reinforcement Learning",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "reinforcement_learning",
+      "multi_task"
+    ],
+    "url": "https://arxiv.org/abs/2512.03963",
+    "code_url": null,
+    "summary": "Multi-task RL over five temporal tasks (~60K videos) on Qwen2.5-VL-7B.",
+    "open_question": "Does adding audio-visual tasks to the mix help or hurt vision-only tasks?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "chen25chronusomni",
+    "title": "ChronusOmni: Improving Time Awareness of Omni Large Language Models",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "temporal_grounding",
+      "audio_visual",
+      "reinforcement_learning"
+    ],
+    "url": "https://arxiv.org/abs/2512.09841",
+    "code_url": null,
+    "summary": "Interleaves timestamp tokens with video and audio tokens, adds RL ordering rewards, and releases ChronusAV for explicit and implicit audio-visual grounding.",
+    "open_question": "How well does it handle non-English and code-switched speech?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "ghosh26avflamingo",
+    "title": "Nemotron-Labs-Audio-Visual Flamingo: Open Audio-Visual Intelligence for Long and Complex Videos",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "audio_visual",
+      "long_video",
+      "reasoning"
+    ],
+    "url": "https://arxiv.org/abs/2607.16107",
+    "code_url": null,
+    "summary": "Three-stage curriculum from short perception to long multi-event reasoning, with timestamp-grounded chain-of-thought.",
+    "open_question": "Are the timestamp-grounded reasoning steps faithful to the evidence?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "tao26lvomnibench",
+    "title": "LVOmniBench: Pioneering Long Audio-Video Understanding Evaluation for Omnimodal LLMs",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "benchmark",
+      "audio_visual",
+      "long_video"
+    ],
+    "url": "https://arxiv.org/abs/2603.19217",
+    "code_url": null,
+    "summary": "Manually curated benchmark for long-form audio-video understanding covering memory, temporal localization and perception.",
+    "open_question": "Which failures come from memory vs from cross-modal alignment?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li26omnivideobench",
+    "title": "OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni MLLMs",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "audio_visual",
+      "reasoning"
+    ],
+    "url": "https://arxiv.org/abs/2510.10689",
+    "code_url": null,
+    "summary": "Audio-visual reasoning benchmark with 13 question types, including temporal and causal; ICLR 2026.",
+    "open_question": "How much accuracy remains when audio is removed?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "sarkar25vcrbench",
+    "title": "VCRBench: Exploring Long-form Causal Reasoning Capabilities of Large Video Language Models",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "benchmark",
+      "causal_reasoning",
+      "video"
+    ],
+    "url": "https://arxiv.org/abs/2505.08455",
+    "code_url": null,
+    "summary": "Causal ordering of shuffled procedural clips; finds models lean on language priors; proposes recognition-reasoning decomposition.",
+    "open_question": "Does an explicit action-event log reduce reliance on language priors?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li25causalstep",
+    "title": "CausalStep: A Benchmark for Explicit Stepwise Causal Reasoning in Videos",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "benchmark",
+      "causal_reasoning",
+      "video"
+    ],
+    "url": "https://arxiv.org/abs/2507.16878",
+    "code_url": null,
+    "summary": "Stepwise causal QA over causally linked video segments with diagnostic metrics.",
+    "open_question": "Can stepwise causal QA be extended to audio-driven causes?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "chen26flexmem",
+    "title": "Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "memory"
+    ],
+    "url": "https://arxiv.org/abs/2603.29252",
+    "code_url": null,
+    "summary": "FlexMem: training-free memory over visual KV caches with recall strategies; runs on a single consumer GPU. CVPR 2026.",
+    "open_question": "Can audio KV caches be stored and recalled the same way?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "mmmem26",
+    "title": "From Verbatim to Gist: Distilling Pyramidal Multimodal Memory via Semantic Information Bottleneck for Long-Horizon Video Agents",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "long_video",
+      "memory",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2603.01455",
+    "code_url": "https://github.com/EliSpectre/MM-Mem",
+    "summary": "MM-Mem: pyramid memory from detailed to summarized, for offline and streaming video.",
+    "open_question": "Which memory level is needed for temporal localization vs QA?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li26vam",
+    "title": "Visual Agentic Memory: Enabling Online Long Video Understanding via Online Indexing, Hierarchical Memory, and Agentic Retrieval",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "long_video",
+      "memory",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2605.16481",
+    "code_url": "https://github.com/yiliu-li/Visual-Agentic-Memory",
+    "summary": "Online indexing plus hierarchical memory and agentic retrieval; scales to month-long streams.",
+    "open_question": "How should audio events be indexed alongside frames?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "dixit26seg",
+    "title": "Semantic Event Graphs for Long-Form Video Question Answering",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "long_video",
+      "event_graph",
+      "efficiency"
+    ],
+    "url": "https://arxiv.org/abs/2601.06097",
+    "code_url": null,
+    "summary": "Converts object-tracking proximity into start/end events in a temporal scene graph, cutting tokens sharply; small evaluation (5 videos), no audio or action recognition.",
+    "open_question": "Do action-recognition and audio events beat object-proximity events?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "rege26egagent",
+    "title": "Agentic Very Long Video Understanding",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "long_video",
+      "event_graph",
+      "agents",
+      "audio_visual"
+    ],
+    "url": "https://arxiv.org/abs/2601.18157",
+    "code_url": null,
+    "summary": "EGAgent: planning agent that searches entity scene graphs plus visual and audio data over days of egocentric video.",
+    "open_question": "How much does the graph contribute vs the hybrid search tools?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "graphthinker26",
+    "title": "GraphThinker: Reinforcing Video Reasoning with Event Graph Thinking",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "event_graph",
+      "reasoning",
+      "reinforcement_learning"
+    ],
+    "url": "https://arxiv.org/abs/2602.17555",
+    "code_url": null,
+    "summary": "MLLM builds an event-based scene graph as an intermediate reasoning step, trained with RL to reduce hallucination.",
+    "open_question": "Are the generated graphs temporally accurate, or only plausible?",
+    "reviewed_on": "2026-11-18"
   }
 ]

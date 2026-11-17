@@ -19,3 +19,7 @@ Label each statement **definition**, **primary-source claim**, **hypothesis**, *
 - [Urdu/Sindhi script and code-switching pitfalls](low_resource_speech.md)
 - [Datasets for Urdu/Sindhi speech](datasets.md)
 - [Path to becoming a recognized expert](expert_path.md)
+
+## Multimodal temporal reasoning track
+- [Strategy](../research/MULTIMODAL_TEMPORAL_STRATEGY.md)
+- [Literature review (2026-11-18)](multimodal_temporal_literature_review.md)

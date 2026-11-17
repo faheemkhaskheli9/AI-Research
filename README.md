@@ -1,6 +1,6 @@
 # AI Research
 
-A reproducible, source-linked research workspace for studying **lifelong learning, reliable autonomous agents, reasoning, world models, and grounded intelligence**, with a second track on **reliable multilingual voice agents for Urdu and Sindhi**.
+A reproducible, source-linked research workspace for studying **lifelong learning, reliable autonomous agents, reasoning, world models, and grounded intelligence**, with tracks on **reliable multilingual voice agents for Urdu and Sindhi** and **multimodal temporal reasoning in video**.
 
 > **Status:** research knowledge base and educational baselines. No new scientific results are claimed.
 
@@ -10,6 +10,8 @@ A reproducible, source-linked research workspace for studying **lifelong learnin
 - [AI research areas overview](research/AI_RESEARCH_AREAS.md) — beginner-friendly map of the field.
 - [Research strategy](research/STRATEGY.md) — focused research program, hypotheses, milestones, and adversarial review.
 - [Voice-agent strategy](research/VOICE_AGENTS_STRATEGY.md) — Urdu/Sindhi voice-agent research track.
+- [Multimodal temporal strategy](research/MULTIMODAL_TEMPORAL_STRATEGY.md) — audio-video temporal grounding, causal event chains and memory.
+- [Multimodal literature review](knowledge/multimodal_temporal_literature_review.md) — 2025–2026 papers, gaps and reading order.
 - [Paper catalog](papers/catalog.json) — curated references with original source links and evidence status.
 - [Reading guide](papers/READING_GUIDE.md) — reading order, reproductions, and literature note conventions.
 - [Knowledge base](knowledge/README.md) — definitions and methodological guidance.

@@ -49,3 +49,18 @@ See [voice-agent strategy](../research/VOICE_AGENTS_STRATEGY.md).
 7. `lewis20rag`, `asai23selfrag`, `liu23lost` — grounding.
 
 Priority reproductions: Whisper WER on FLEURS Urdu; judge–human agreement on a small Urdu set; pass^k on a toy agent.
+
+## Multimodal temporal reasoning track
+
+See [multimodal temporal strategy](../research/MULTIMODAL_TEMPORAL_STRATEGY.md) and the [literature review](../knowledge/multimodal_temporal_literature_review.md).
+
+1. `zhang25timelens` → `zhu26timelens2` — what makes temporal grounding work.
+2. `wang25timer1` → `li25tempsampr1` → `wu25tempr1` — RL recipes.
+3. `radwan26sonico1`, `tao26lvomnibench`, `li26omnivideobench` — audio-video benchmarks.
+4. `chen25chronusomni` → `ghosh26avflamingo` — audio-visual timing.
+5. `du26tgheads` — attention already knows "when".
+6. `dixit26seg` → `graphthinker26` → `rege26egagent` — structured event representations.
+7. `chen26flexmem` → `mmmem26` → `li26vam` — long-video memory.
+8. `sarkar25vcrbench`, `li25causalstep` — causal reasoning.
+
+Priority reproduction: open omni model on SONIC-O1 temporal localization, with vs without audio.

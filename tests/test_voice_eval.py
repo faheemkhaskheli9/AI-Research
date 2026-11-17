@@ -84,7 +84,9 @@ class TestDocReferences(unittest.TestCase):
         root = Path(__file__).resolve().parent.parent
         ids = {p["id"] for p in json.loads((root / "papers" / "catalog.json").read_text(encoding="utf-8"))}
         docs = ["research/AI_RESEARCH_AREAS.md", "research/VOICE_AGENTS_STRATEGY.md",
-                "knowledge/datasets.md", "papers/READING_GUIDE.md"]
+                "knowledge/datasets.md", "papers/READING_GUIDE.md",
+                "research/MULTIMODAL_TEMPORAL_STRATEGY.md",
+                "knowledge/multimodal_temporal_literature_review.md"]
         for doc in docs:
             refs = set(re.findall(r"`([a-z]+\d{2}[a-z0-9]*)`", (root / doc).read_text(encoding="utf-8")))
             self.assertFalse(refs - ids, f"{doc} references unknown ids: {sorted(refs - ids)}")

@@ -43,3 +43,13 @@ See [VOICE_AGENTS_STRATEGY.md](research/VOICE_AGENTS_STRATEGY.md).
 - [ ] Judge–human agreement study, Urdu vs. English, with bootstrap CIs.
 - [ ] Entity error rate and pass^k task metrics.
 - [ ] Workshop submission; then public dataset v1 on Hugging Face.
+
+## Multimodal temporal reasoning track
+See [MULTIMODAL_TEMPORAL_STRATEGY.md](research/MULTIMODAL_TEMPORAL_STRATEGY.md).
+- [x] Literature review of 2025–2026 temporal grounding, audio-visual and memory work.
+- [ ] Baseline: open omni model on SONIC-O1 localization, with vs without audio.
+- [ ] Training-free attention-based timestamp decoding (H4).
+- [ ] Action + audio event log pipeline; ablations for H1 and H3.
+- [ ] Event graph + memory on long-video and causal benchmarks (H2).
+- [ ] Demographic fairness analysis of localization errors.
+- [ ] Pilot Urdu / code-switched audio-video grounding set.
