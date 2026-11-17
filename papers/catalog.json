@@ -254,5 +254,117 @@
     "summary": "Measures changes to real repositories against software issue requirements.",
     "open_question": "How can long-horizon verification distinguish a passing patch from a generalizable repair policy?",
     "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "gu23mamba",
+    "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "architectures",
+      "efficient_ai",
+      "sequence_models"
+    ],
+    "url": "https://arxiv.org/abs/2312.00752",
+    "code_url": null,
+    "summary": "Studies a selective state-space model architecture as an alternative to attention-heavy sequence modeling.",
+    "open_question": "What workloads genuinely favor selective state-space models at equal quality and memory budgets?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "burns23w2s",
+    "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "alignment",
+      "safety",
+      "supervision"
+    ],
+    "url": "https://arxiv.org/abs/2312.09390",
+    "code_url": null,
+    "summary": "Investigates whether stronger models can learn from labels supplied by weaker supervisors.",
+    "open_question": "How can weak oversight detect sophisticated failures in stronger autonomous systems?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "scholkopf21causal",
+    "title": "Towards Causal Representation Learning",
+    "year": 2021,
+    "status": "preprint",
+    "topics": [
+      "causal_ai",
+      "representation_learning",
+      "generalization"
+    ],
+    "url": "https://arxiv.org/abs/2102.11107",
+    "code_url": null,
+    "summary": "Connects causal variable discovery from observations with transfer, robustness, and generalization challenges.",
+    "open_question": "How can causal variables be identified without unrealistic supervision or interventions?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "lu24scientist",
+    "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+    "year": 2024,
+    "status": "preprint",
+    "topics": [
+      "ai_for_science",
+      "agents",
+      "evaluation"
+    ],
+    "url": "https://arxiv.org/abs/2408.06292",
+    "code_url": "https://github.com/SakanaAI/AI-Scientist",
+    "summary": "Studies automated generation, coding, experimentation, and review of AI research ideas.",
+    "open_question": "Can automated research produce independently replicated scientific discoveries instead of evaluator-approved writeups?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "du23debate",
+    "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+    "year": 2023,
+    "status": "preprint",
+    "topics": [
+      "multi_agent",
+      "reasoning",
+      "evaluation"
+    ],
+    "url": "https://arxiv.org/abs/2305.14325",
+    "code_url": null,
+    "summary": "Investigates whether dialogue among multiple model instances improves factuality and reasoning.",
+    "open_question": "Does debate retain benefits when agents share correlated errors or collude?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "konecny16fed",
+    "title": "Federated Learning: Strategies for Improving Communication Efficiency",
+    "year": 2016,
+    "status": "preprint",
+    "topics": [
+      "federated_learning",
+      "efficient_ai",
+      "privacy"
+    ],
+    "url": "https://arxiv.org/abs/1610.05492",
+    "code_url": null,
+    "summary": "Examines structured and compressed client updates to reduce communication in distributed training.",
+    "open_question": "Can continual federated learning reduce communication while controlling forgetting and privacy leakage?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "hoffmann22chinchilla",
+    "title": "Training Compute-Optimal Large Language Models",
+    "year": 2022,
+    "status": "preprint",
+    "topics": [
+      "scaling",
+      "efficient_ai",
+      "language_models"
+    ],
+    "url": "https://arxiv.org/abs/2203.15556",
+    "code_url": null,
+    "summary": "Investigates model-size and training-token allocation under a fixed compute budget.",
+    "open_question": "Do compute-optimal scaling rules remain stable for multimodal continual learners?",
+    "reviewed_on": "2026-11-18"
   }
 ]
