@@ -2,8 +2,29 @@
 
 **Research date:** 2026-11-18  
 **Status:** Literature synthesis and proposed experiments; not an implemented or verified model  
-**Working title:** TinyState: Factorised Persistent Memory for Language Modelling with a 100-Token Attention Window  
-**Research question:** Can a 10M–100M-parameter model directly attend to only 100 recent tokens, maintain bounded persistent state, and generate much longer continuations while retaining facts, goals, coherence, and efficiency?
+**Working title:** Strict-100: Unbounded Streaming Generation Under a Hard 100-Token Context Window (and explicitly labeled bounded-memory extensions)  
+**Research question:** Can a 10M–100M-parameter language model with a **hard 100-token context window at every decoding step** generate arbitrarily long output? How much long-range retention is possible without extra memory, and what measurable improvements arise when optional bounded recurrent state is explicitly introduced?
+
+## Authoritative scope clarification — 100-token **context window** (2026-11-18)
+
+The researcher means **at most 100 token positions in the model's active context at *every* generation step**, not merely a 100-token starting prompt. Once the model generates the 101st continuation token, it must evict the oldest directly attended token. This restriction remains active at output positions 1K, 10K, 100K, and beyond.
+
+The core strict-window baseline implements
+
+\[
+p_\theta(y_t \mid y_{\max(1,t-100):t-1}, x_{\text{recent}})
+\]
+
+where the conditioning sequence is the **most recent 100 tokens of the concatenated prompt and generated output**. More precisely, if \(z = [x_1,\ldots,x_m,y_1,\ldots]\), the next-token distribution depends only on the suffix \(z_{\max(1,n-99):n}\), where \(n\) is the number of already-seen tokens. Its causal self-attention KV cache contains no more than 100 positions, including any retained special/sink tokens.
+
+**Two research tracks must remain distinct:**
+
+1. **Strict-100 / no out-of-window state.** Context consists solely of the most recent 100 token IDs. There are no recurrent state vectors, long-lived memory tokens, external databases, summary buffers, or persistent KV sinks outside that budget. This can stream indefinitely in principle, but once an old fact leaves the window it cannot be recovered *unless* the model keeps re-expressing it within the latest 100 tokens. No arbitrary long-range recall can be guaranteed.
+2. **100-token attention + bounded state.** Direct attention sees at most 100 ordinary token positions, but recurrent vectors or a bounded memory bank encode information from older positions. This also permits unbounded-duration streaming with fixed inference-state bytes, but it is **not** a strict 100-token *total-information* model. State bytes and extra vectors are disclosed and compared against Track 1.
+
+A sliding-window Transformer alone answers the **possibility** question: output length is not bounded by the attention window. The **research** question is whether a very small model can maintain meaningful long-form structure, goal consistency and delayed factual recall under that constraint. Any apparent gain from external memory should not be presented as coming from 100 tokens alone.
+
+**Hard implementation invariants:** attention to no more than 100 actual token positions at each step; discard evicted KV entries or recompute from a 100-token ring buffer; avoid positional-embedding length exhaustion via a correctly specified rolling/relative position scheme; verify causal masking and that no full-history tensor or latent state is retained in the strict baseline; write generated tokens directly to an output sink rather than accumulating them. "Infinite" refers to arbitrarily long time/sequence under external stopping, not infinite computation or guaranteed high-quality text.
 
 ## Executive summary
 
@@ -17,7 +38,7 @@ The phrase "100 input tokens" has three possible interpretations that must never
 | Active attention window =100 tokens | Number of recent token positions directly visible to attention per step | No. Old information must survive in recurrent or external memory. |
 | Maximum 100 token-equivalents in KV cache | Direct stored token K/V entries | No. Other state may be used, but its size must be reported independently. |
 
-**Proposed contribution:** Characterize and improve the trade-off between **long-range retention** and **persistent memory bytes** under a strictly limited token-attention window. Do not claim “infinite context”: infinite output horizon and infinite information capacity are different.
+**Proposed contribution:** First establish the quality limits of a **strict 100-token rolling window with zero hidden/external memory**, then characterize the separately labeled trade-off between **long-range retention** and **persistent memory bytes** under a 100-token direct-attention window. Do not claim “infinite context”: infinite output horizon and infinite information capacity are different.
 
 ## 1. Theoretical formulation and limitations
 
@@ -140,7 +161,8 @@ For 64 FP16 vectors of width 384, the value bank alone occupies about **49,152 b
 state = model.initial_state()
 window = deque(maxlen=100)
 memory = BoundedEpisodicMemory(capacity=64)
-model.consume_prompt(prompt_tokens[:100], state, window)
+assert len(prompt_tokens) <= 100  # reject, do not truncate, an oversized prompt
+model.consume_prompt(prompt_tokens, state, window)
 
 while not external_stop_condition():
     memories = memory.retrieve(state.query, k=4)
@@ -161,7 +183,7 @@ while not external_stop_condition():
         state.plan = model.update_plan(state)
 ~~~
 
-The prompt must be rejected rather than silently truncated when enforcing a strict input contract in an experiment. The pseudocode truncates only to illustrate interface handling; production benchmark code should assert length <=100. Also ensure that the token consumed by state and the token appended to the attention cache are synchronized exactly once: careless double consumption causes invalid comparisons.
+The strict baseline does not call `memory.retrieve`, does not carry `state`, and does not use `plan`: it recomputes from or incrementally caches *only* the last 100 tokens. The illustrated hybrid algorithm is for the separately labeled 100-token-attention-plus-memory experiment. Reject oversized benchmark prompts; never silently truncate them. Also ensure that the token consumed by state and the token appended to the attention cache are synchronized exactly once: careless double consumption causes invalid comparisons.
 
 With all banks capped, inference **model state and KV memory can be O(1)** with output length \(T\). Accumulating the output in RAM is still \(O(T)\); real streaming should write tokens to disk, a socket, or a consumer without retaining the whole transcript in process memory.
 
@@ -207,7 +229,7 @@ Use dataset licenses and record provenance, filtering, duplicates, contamination
 
 Parameter-, tokenizer-, corpus-, optimization- and training-token-matched comparisons:
 
-1. Sliding Transformer with exactly 100 local tokens.
+1. **Primary strict baseline:** sliding Transformer with exactly 100 total active token positions and **no hidden/external history**.
 2. StreamingLLM-style sink + local cache (same **total** token-KV budget).
 3. Recurrent Memory Transformer-style persistent memory tokens.
 4. RWKV recurrent LM.
@@ -222,7 +244,8 @@ Report exact memory byte budget, not merely model parameter count. Baselines tha
 
 ## 7. Evaluation protocol
 
-**Prompt length:** always <=100 tokens.  
+**Active context length at every decode step:** always <=100 token positions, counting prior prompt and generated tokens that remain in the window.  
+**Initial prompt length:** <=100 tokens for the controlled benchmark; this is not the main research constraint.  
 **Generated length:** 1K, 10K, 100K; optional 1M output tokens as an engineering stress test.  
 **Seeds:** multiple fixed seeds and documented decoding settings (temperature, top-p, repetition handling).  
 **Lengths:** evaluate both raw length reached and validity/quality conditioned on length.
