@@ -1,0 +1,258 @@
+[
+  {
+    "id": "dorovatas26a",
+    "title": "Position: Modular Memory is the Key to Continual Learning Agents",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "continual_learning",
+      "memory",
+      "agents"
+    ],
+    "url": "https://proceedings.mlr.press/v306/dorovatas26a.html",
+    "code_url": null,
+    "summary": "Position paper arguing for modular memory that combines rapid in-context updates with stable in-weight adaptation.",
+    "open_question": "Which modular memory designs improve held-out transfer at a fixed compute and memory budget?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "ai26e",
+    "title": "MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "continual_learning",
+      "benchmark",
+      "memory"
+    ],
+    "url": "https://proceedings.mlr.press/v306/ai26e.html",
+    "code_url": null,
+    "summary": "Benchmark of feedback-driven memory and continual-learning behavior across tasks and domains.",
+    "open_question": "Can benchmark gains distinguish behavioral learning from retrieving prior facts?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li26cv",
+    "title": "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "reinforcement_learning",
+      "continual_learning"
+    ],
+    "url": "https://proceedings.mlr.press/v306/li26cv.html",
+    "code_url": "https://github.com/liushiliushi/JitRL",
+    "summary": "Uses retrieved trajectories and action-advantage estimates to adapt an agent without gradient updates.",
+    "open_question": "What happens when the experience bank contains contradictory or forged trajectories?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yu26av",
+    "title": "Outcome Rewards Do Not Guarantee Verifiable or Causally Important Reasoning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "reasoning",
+      "evaluation",
+      "interpretability"
+    ],
+    "url": "https://proceedings.mlr.press/v306/yu26av.html",
+    "code_url": null,
+    "summary": "Shows why greater answer accuracy from verifiable-reward training need not entail faithful or independently sufficient reasoning traces.",
+    "open_question": "Can training signals improve verified intermediate steps while preserving final-task accuracy?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "asawa26cl",
+    "title": "Continual Learning Bench: Evaluating Frontier AI Systems in Real-World Stateful Environments",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "continual_learning",
+      "benchmark",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2606.05661",
+    "code_url": null,
+    "summary": "Proposes expert-validated, stateful task streams to isolate improvement due to prior experience.",
+    "open_question": "How robust are apparent gains when latent task families and memory budgets are controlled?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "li26mccl",
+    "title": "Memory-Centric Continual Learning for AI Agents",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "memory",
+      "continual_learning",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2610.29357",
+    "code_url": null,
+    "summary": "Proposes a memory-centered taxonomy and evaluates action-level retention, adaptation, and transfer.",
+    "open_question": "Does adaptive memory management learn reusable procedures rather than storing larger traces?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "omri26memory",
+    "title": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "memory",
+      "systems",
+      "agents"
+    ],
+    "url": "https://arxiv.org/abs/2606.06448",
+    "code_url": null,
+    "summary": "Studies construction, retrieval, and generation costs of different agent memory designs.",
+    "open_question": "Which read/write scheduling decisions yield the best transfer per unit memory and compute?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yuan26osworld",
+    "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "agents",
+      "benchmark",
+      "long_horizon"
+    ],
+    "url": "https://arxiv.org/abs/2606.29537",
+    "code_url": null,
+    "summary": "Benchmark designed around extended computer-use workflows and stepwise checkpoints.",
+    "open_question": "How does error recovery interact with memory and verification in long workflows?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yao22react",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "year": 2022,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "reasoning",
+      "tools"
+    ],
+    "url": "https://arxiv.org/abs/2210.03629",
+    "code_url": null,
+    "summary": "Interleaves model-produced reasoning with environment actions and observations.",
+    "open_question": "How can an agent independently verify actions instead of trusting its own reasoning trace?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "shinn23reflexion",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "memory",
+      "feedback"
+    ],
+    "url": "https://arxiv.org/abs/2303.11366",
+    "code_url": null,
+    "summary": "Reuses language feedback from previous trials as a memory-based improvement mechanism.",
+    "open_question": "When does reflective memory overfit and worsen subsequent decisions?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "park23generative",
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "memory",
+      "simulation"
+    ],
+    "url": "https://arxiv.org/abs/2304.03442",
+    "code_url": null,
+    "summary": "Introduces stored experiences, reflection, and retrieval for interactive simulated agents.",
+    "open_question": "How do reflections degrade under contradictory or adversarial experiences?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "hafner23dreamer",
+    "title": "Mastering Diverse Domains through World Models",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "world_models",
+      "reinforcement_learning",
+      "planning"
+    ],
+    "url": "https://arxiv.org/abs/2301.04104",
+    "code_url": null,
+    "summary": "Introduces DreamerV3, a model-based RL method that learns by imagining future trajectories.",
+    "open_question": "How well does control improve under shifted dynamics and model uncertainty?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "assran25vjepa2",
+    "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+    "year": 2025,
+    "status": "preprint",
+    "topics": [
+      "world_models",
+      "multimodal",
+      "robotics"
+    ],
+    "url": "https://arxiv.org/abs/2506.09985",
+    "code_url": null,
+    "summary": "Studies self-supervised video prediction representations and action-conditioned robot planning.",
+    "open_question": "Do latent visual predictions support correct intervention-based reasoning on unseen physics?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "brohan23rt2",
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "robotics",
+      "multimodal",
+      "embodied_ai"
+    ],
+    "url": "https://arxiv.org/abs/2307.15818",
+    "code_url": null,
+    "summary": "Trains vision-language-action models that map multimodal observations to robot actions.",
+    "open_question": "What transfers to unfamiliar objects and actions without unsafe real-world exploration?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "liu23agentbench",
+    "title": "AgentBench: Evaluating LLMs as Agents",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "benchmark",
+      "evaluation"
+    ],
+    "url": "https://arxiv.org/abs/2308.03688",
+    "code_url": "https://github.com/THUDM/AgentBench",
+    "summary": "Assesses language agents in multiple interactive environments.",
+    "open_question": "Which benchmark failures persist once tool execution and feedback are verified?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "jimenez23swebench",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "year": 2023,
+    "status": "peer_reviewed",
+    "topics": [
+      "agents",
+      "coding",
+      "benchmark"
+    ],
+    "url": "https://arxiv.org/abs/2310.06770",
+    "code_url": "https://github.com/SWE-bench/SWE-bench",
+    "summary": "Measures changes to real repositories against software issue requirements.",
+    "open_question": "How can long-horizon verification distinguish a passing patch from a generalizable repair policy?",
+    "reviewed_on": "2026-11-18"
+  }
+]

@@ -1,0 +1,18 @@
+name: validate
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate paper metadata
+        run: python scripts/validate_catalog.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Smoke experiment
+        run: python -m experiments.continual_memory.run --episodes 90 --train-episodes 60 --seed 42
