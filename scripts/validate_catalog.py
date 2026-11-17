@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -56,8 +56,8 @@ def validate(entries: object) -> list[str]:
             errors.append(f"{label}: non-primary or invalid source URL")
         try:
             reviewed = date.fromisoformat(entry["reviewed_on"])
-            if reviewed > date.today():
-                errors.append(f"{label}: review date in the future")
+            if reviewed > date.today() + timedelta(days=1):
+                errors.append(f"{label}: review date more than one UTC day in the future")
         except (TypeError, ValueError):
             errors.append(f"{label}: invalid reviewed_on date")
         code_url = entry.get("code_url")
