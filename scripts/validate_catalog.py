@@ -11,6 +11,7 @@ CATALOG = ROOT / "papers" / "catalog.json"
 ALLOWED_SOURCE_HOSTS = {
     "arxiv.org", "proceedings.mlr.press", "openreview.net",
     "hai.stanford.edu", "www.nature.com", "www.science.org",
+    "aclanthology.org", "openaccess.thecvf.com", "proceedings.colm.cc",
 }
 REQUIRED = {
     "id", "title", "year", "status", "topics", "url",

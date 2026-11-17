@@ -53,3 +53,17 @@ See [MULTIMODAL_TEMPORAL_STRATEGY.md](research/MULTIMODAL_TEMPORAL_STRATEGY.md).
 - [ ] Event graph + memory on long-video and causal benchmarks (H2).
 - [ ] Demographic fairness analysis of localization errors.
 - [ ] Pilot Urdu / code-switched audio-video grounding set.
+
+## Multimodal grounded intelligence track (source review: 2026-11-18)
+
+See [literature and adversarial review](research/MULTIMODAL_GROUNDED_INTELLIGENCE.md), [memory model](knowledge/multimodal_event_memory.md), and [experiment protocol](experiments/multimodal_memory/README.md).
+
+- [x] Audit primary papers and update publication status for SONIC-O1.
+- [x] Map prior art in hierarchical/event memory, audiovisual grounding and causal evidence.
+- [x] Specify falsifiable hypotheses, equal-budget controls, evaluation protocol and resource constraints.
+- [ ] Confirm reproducible SONIC-O1 dataset subset/licensing; create pinned manifest and parser.
+- [ ] Reproduce oracle-evidence, question-only, recent-only and flat-retrieval baselines.
+- [ ] Implement immutable observation and versioned claim schemas with invariants/tests.
+- [ ] Add evidence replay and contradiction-based revision, then run preregistered ablations.
+- [ ] Extend evaluation to MemInStream, CaST-Bench or EgoMemReason without mixing differing task metrics.
+- [ ] Incorporate and verify any additional sources/findings from the full Deep Research report before making performance claims.

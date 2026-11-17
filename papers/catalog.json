@@ -777,17 +777,17 @@
     "id": "radwan26sonico1",
     "title": "SONIC-O1: A Real-World Benchmark for Evaluating Multimodal Large Language Models on Audio-Video Understanding",
     "year": 2026,
-    "status": "preprint",
+    "status": "peer_reviewed",
     "topics": [
       "multimodal",
       "benchmark",
       "temporal_grounding",
       "fairness"
     ],
-    "url": "https://arxiv.org/abs/2601.21666",
+    "url": "https://aclanthology.org/2026.emnlp-main.767/",
     "code_url": "https://github.com/vectorinstitute/sonic-o1",
-    "summary": "Human-verified audio-video benchmark (~60 h, 231 clips, 13 domains) for summarization, MCQ and temporal localization; reports a large closed-vs-open gap on localization and demographic gaps. NeurIPS 2026 workshop poster.",
-    "open_question": "Does adding explicit audio events close the open-model gap on temporal localization?",
+    "summary": "EMNLP 2026 real-world, human-verified audio-video benchmark (~60 hours; 231 clips; 13 conversational domains; 4,958 annotations), evaluating summaries, MCQ, and rationale-supported temporal localization with group-wise analyses.",
+    "open_question": "Do video-only, audio-only, recent-frame and evidence-only controls expose temporal grounding errors despite answer accuracy?",
     "reviewed_on": "2026-11-18"
   },
   {
@@ -1213,6 +1213,240 @@
     "code_url": null,
     "summary": "Develops a monitor red-teaming workflow spanning agent awareness, adversarial strategies and computer-use settings.",
     "open_question": "How should adaptive monitor attacks be budgeted and assessed at deployment-like base rates?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yan26pyravid",
+    "title": "PyraVid: Hierarchical Multimodal Memory for Long-Horizon Video Reasoning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "multimodal",
+      "long_video",
+      "memory",
+      "event_segmentation"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.777/",
+    "code_url": null,
+    "summary": "EMNLP framework organizing video into hierarchical multimodal event memory; challenges novelty claims based solely on event hierarchies.",
+    "open_question": "Does evidence-preserving memory revision improve results over hierarchy without revision?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "yeo26worldmm",
+    "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "memory",
+      "multimodal"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yeo_WorldMM_Dynamic_Multimodal_Memory_Agent_for_Long_Video_Reasoning_CVPR_2026_paper.html",
+    "code_url": null,
+    "summary": "CVPR system using dynamic multimodal memory for long-video reasoning; dynamic retrieval alone is not a new contribution.",
+    "open_question": "How are uncertain historical claims corrected, not just retrieved?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "cao26videotrace",
+    "title": "VideoTrace-R1: Long Video-based Retrieval-Augmented Generation via Reinforcement Learning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "temporal_reasoning",
+      "retrieval",
+      "reinforcement_learning"
+    ],
+    "url": "https://proceedings.mlr.press/v306/cao26m.html",
+    "code_url": null,
+    "summary": "ICML method combining long-video retrieval and reinforcement learning for temporal reasoning.",
+    "open_question": "Can evidence constraints prevent reward-driven reasoning shortcuts?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "zhang26castbench",
+    "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "video",
+      "causal_reasoning",
+      "spatiotemporal_grounding"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_CaST-Bench_Benchmarking_Causal_Chain-Grounded_Spatio-Temporal_Reasoning_for_Video_Question_Answering_CVPR_2026_paper.html",
+    "code_url": "https://github.com/mf-zhang/CaST-Bench-Evaluation",
+    "summary": "CVPR benchmark evaluates localized cause/effect evidence chains in video question answering.",
+    "open_question": "Do cited chains survive plausible alternative explanations and interventions?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "wang26egomemreason",
+    "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "long_video",
+      "episodic_memory",
+      "egocentric"
+    ],
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/a4e720ce31ccd8ba747d8863e1580fa8-Abstract-Conference.html",
+    "code_url": "https://github.com/Ziyang412/EgoMemReason",
+    "summary": "COLM benchmark of multi-segment memory-driven reasoning in long-horizon first-person video.",
+    "open_question": "How much failure results from perception, historical retrieval, or multi-evidence integration?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "kwan26videommelogical",
+    "title": "Video-MME-Logical: A Controlled Diagnostic Benchmark for Video Temporal-Logical Reasoning",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "temporal_reasoning",
+      "video",
+      "state_tracking"
+    ],
+    "url": "https://aclanthology.org/2026.findings-emnlp.423/",
+    "code_url": "https://github.com/Mrakas/video-mme-logical",
+    "summary": "EMNLP Findings controlled temporal-logic tasks separate intermediate state failures from final-answer errors.",
+    "open_question": "Can persistent event memory improve state tracking without introducing ordering errors?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "he26meminstream",
+    "title": "MemInStream: Memorizing or Merely Recognizing? Rethinking Streaming Video Memory Evaluation",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "benchmark",
+      "streaming_video",
+      "memory",
+      "evaluation"
+    ],
+    "url": "https://arxiv.org/abs/2611.15640",
+    "code_url": null,
+    "summary": "Preprint introduces evidence-solvability and evidence-necessity checks to isolate genuine streaming-memory capability from recognition and language shortcuts.",
+    "open_question": "Do memory methods improve under both evidence-controlled conditions and an equal-history budget?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "anchor26ground",
+    "title": "ANCHOR: Audio-Visually Grounded Chain-of-Thought Reasoning Benchmark",
+    "year": 2026,
+    "status": "preprint",
+    "topics": [
+      "benchmark",
+      "audio_video",
+      "evidence_grounding",
+      "rationale_faithfulness"
+    ],
+    "url": "https://arxiv.org/abs/2610.22964",
+    "code_url": null,
+    "summary": "Preprint tests whether audiovisual reasoning traces correspond to temporal, spatial, and acoustic evidence, not just correct final answers.",
+    "open_question": "Can claim-level provenance and abstention improve rationale fidelity under conflict?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "seo26hourground",
+    "title": "Natural-Language Temporal Grounding in Hour-Long Videos is a Search Problem: A Benchmark and Empirical Decomposition",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "long_video",
+      "temporal_grounding",
+      "retrieval"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.2112/",
+    "code_url": null,
+    "summary": "EMNLP study frames hour-scale temporal grounding as search, motivating retrieval-budget and coverage controls.",
+    "open_question": "How should adaptive search be compared against fixed frame budgets?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "emma26eventmemory",
+    "title": "EMMA: Event-Driven Multimodal Memory System with Multi-Agent Retrieval",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "multimodal",
+      "event_segmentation",
+      "memory",
+      "retrieval"
+    ],
+    "url": "https://aclanthology.org/2026.findings-emnlp.1256/",
+    "code_url": null,
+    "summary": "EMNLP Findings event-driven memory uses visual semantic changes and speech transitions for segmentation, with retrieval agents.",
+    "open_question": "Can explicit revision and evidence integrity outperform event-based segmentation alone?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "trace26temporal",
+    "title": "TRACE: Temporal Retrieval with Anchored and Convergent Evidence for Long-Horizon Video Understanding",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "evidence_grounding",
+      "retrieval",
+      "temporal_reasoning"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.2626/",
+    "code_url": null,
+    "summary": "EMNLP long-video retrieval approach centered on anchored and convergent evidence.",
+    "open_question": "Does retaining conflicting evidence improve correction rather than merely convergence?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "nest26narrative",
+    "title": "NEST: Narrative Event Structures in Time for Long Video Understanding",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "event_graph",
+      "narrative_reasoning"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.2512/",
+    "code_url": null,
+    "summary": "EMNLP work studies narrative event structure rather than treating long videos as unstructured token sequences.",
+    "open_question": "How does narrative structure handle ambiguous or later-disproven events?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "eviscan26moment",
+    "title": "Task-Oriented Moment Localization for Long Video Understanding with Near-Second Coverage",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "long_video",
+      "temporal_grounding",
+      "evidence_search"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.2144/",
+    "code_url": null,
+    "summary": "EMNLP EviScan approach performs targeted moment localization across hour-long recordings.",
+    "open_question": "Can targeted evidence replay correct earlier state estimates at fixed cost?",
+    "reviewed_on": "2026-11-18"
+  },
+  {
+    "id": "tempcore26",
+    "title": "TempCore: Are Video QA Benchmarks Temporally Grounded?",
+    "year": 2026,
+    "status": "peer_reviewed",
+    "topics": [
+      "benchmark",
+      "temporal_grounding",
+      "evaluation"
+    ],
+    "url": "https://aclanthology.org/2026.emnlp-main.125/",
+    "code_url": null,
+    "summary": "EMNLP diagnostic work challenges whether video-QA gains genuinely rely on temporally grounded visual evidence.",
+    "open_question": "Which temporal-QA improvements survive text-only and shuffled-video controls?",
     "reviewed_on": "2026-11-18"
   }
 ]

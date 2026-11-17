@@ -64,3 +64,15 @@ See [multimodal temporal strategy](../research/MULTIMODAL_TEMPORAL_STRATEGY.md) 
 8. `sarkar25vcrbench`, `li25causalstep` — causal reasoning.
 
 Priority reproduction: open omni model on SONIC-O1 temporal localization, with vs without audio.
+
+## Multimodal grounded-intelligence track (2026)
+
+Read in this order and link reproduction notes to the full [survey](../research/MULTIMODAL_GROUNDED_INTELLIGENCE.md):
+
+1. SONIC-O1 (EMNLP) → MemInStream (preprint) → TempCore (EMNLP): understand what metrics and shortcuts actually establish.
+2. WorldMM (CVPR) → PyraVid (EMNLP) → EMMA (Findings EMNLP): compare dynamic, hierarchical and event-driven memories.
+3. VideoTrace-R1 (ICML) → EviScan and hour-long grounding (EMNLP): benchmark targeted retrieval and fine-grained localization.
+4. CaST-Bench (CVPR) → ANCHOR (preprint): separate plausible rationale from evidence-grounded chains.
+5. EgoMemReason (COLM) → Video-MME-Logical (Findings EMNLP): test multi-evidence state and temporal ordering.
+
+**Caution:** Papers published at venues in 2026 should link to their publisher proceedings; the November 2026 MemInStream and October 2026 ANCHOR manuscripts remain preprints unless independently verified otherwise. No benchmark replication is recorded here.

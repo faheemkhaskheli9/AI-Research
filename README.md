@@ -8,6 +8,7 @@ A reproducible, source-linked research workspace for studying **lifelong learnin
 
 - [Research map](research/FRONTIERS.md) — twelve active research directions and open problems.
 - [AI research areas overview](research/AI_RESEARCH_AREAS.md) — beginner-friendly map of the field.
+- [Multimodal grounded intelligence review](research/MULTIMODAL_GROUNDED_INTELLIGENCE.md) — verified 2026 sources, novelty gaps, hypotheses and evaluation controls.
 - [Research strategy](research/STRATEGY.md) — focused research program, hypotheses, milestones, and adversarial review.
 - [Interpretability, AI control and trustworthy autonomy](research/INTERPRETABILITY_AI_CONTROL_LITERATURE_REVIEW.md) — source-linked literature synthesis, monitoring taxonomy, adversarial review and 90-day research design.
 - [Voice-agent strategy](research/VOICE_AGENTS_STRATEGY.md) — Urdu/Sindhi voice-agent research track.
@@ -16,6 +17,7 @@ A reproducible, source-linked research workspace for studying **lifelong learnin
 - [Paper catalog](papers/catalog.json) — curated references with original source links and evidence status.
 - [Reading guide](papers/READING_GUIDE.md) — reading order, reproductions, and literature note conventions.
 - [Knowledge base](knowledge/README.md) — definitions and methodological guidance.
+- [Grounded multimodal memory protocol](experiments/multimodal_memory/README.md) — controlled comparisons and implementation gates.
 - [Experiments](experiments/README.md) — offline baseline code and reproducibility details.
 - [Roadmap](ROADMAP.md) — measurable objectives and priorities.
 - [Contributing](CONTRIBUTING.md) — paper and experiment quality standards.

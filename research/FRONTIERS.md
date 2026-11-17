@@ -46,3 +46,7 @@ Start with the [curated catalog](../papers/catalog.json). The most direct 2026 s
 5. Can verifiers evaluate intermediate decisions without relying on potentially unfaithful reasoning traces?
 
 Do not optimize for leaderboard scores alone; predefine failure criteria, seek counterexamples, and publish limitations.
+
+## Detailed multimodal track
+
+The initial idea (temporal localization + extended audiovisual memory) has mature 2026 prior art; a plausible differentiated focus is **evidence-provenance-preserving revision under delayed or conflicting observations**. See [survey and falsifiable hypotheses](MULTIMODAL_GROUNDED_INTELLIGENCE.md). Do not claim that an event graph or hierarchical memory alone is novel.

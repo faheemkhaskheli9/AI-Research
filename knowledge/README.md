@@ -6,6 +6,7 @@ Concise, source-linked **original notes**, not copied textbook chapters or full 
 - [Continual learning and memory](continual_learning.md)
 - [Research evaluation and reproducibility](evaluation.md)
 - [World models and causal generalization](world_models.md)
+- [Persistent multimodal event memory, evidence provenance and belief revision](multimodal_event_memory.md)
 - [Per-paper reading note template](reading_notes/TEMPLATE.md)
 
 ## Knowledge hygiene

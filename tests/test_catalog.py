@@ -20,6 +20,31 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(any("duplicate" in error for error in errors))
         self.assertTrue(any("source URL" in error for error in errors))
 
+    def test_accepts_official_proceedings_hosts(self):
+        from copy import deepcopy
+        exemplar = {
+            "id": "legit", "title": "Example", "year": 2026,
+            "status": "peer_reviewed", "topics": ["multimodal"],
+            "url": "https://aclanthology.org/2026.emnlp-main.767/",
+            "summary": "Benchmark", "open_question": "Why?",
+            "reviewed_on": "2026-11-18",
+        }
+        for host in ("aclanthology.org", "openaccess.thecvf.com", "proceedings.colm.cc"):
+            with self.subTest(host=host):
+                entry = deepcopy(exemplar)
+                entry["url"] = "https://" + host + "/some/paper"
+                self.assertEqual(validate([entry]), [])
+
+    def test_rejects_lookalike_hosts(self):
+        exemplar = {
+            "id": "spoof", "title": "Example", "year": 2026,
+            "status": "peer_reviewed", "topics": ["multimodal"],
+            "url": "https://aclanthology.org.evil.example/paper",
+            "summary": "Benchmark", "open_question": "Why?",
+            "reviewed_on": "2026-11-18",
+        }
+        self.assertTrue(any("source URL" in error for error in validate([exemplar])))
+
 
 if __name__ == "__main__":
     unittest.main()
