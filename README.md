@@ -7,6 +7,7 @@ A reproducible, source-linked research workspace for studying **lifelong learnin
 ## Start here
 
 - [Research map](research/FRONTIERS.md) — twelve active research directions and open problems.
+- [Small reasoning LM + external knowledge adversarial review](research/SMALL_REASONING_LM_EXTERNAL_KNOWLEDGE_ADVERSARIAL_REVIEW.md) — corrected paper claims, falsification risks, and preregistered baselines.
 - **[All 12 frontier research reviews](research/areas/README.md)** — verified literature, hypotheses, methods, baselines, evaluation, risks, and compute feasibility.
 - [AI research areas overview](research/AI_RESEARCH_AREAS.md) — beginner-friendly map of the field.
 - [Multimodal grounded intelligence review](research/MULTIMODAL_GROUNDED_INTELLIGENCE.md) — verified 2026 sources, novelty gaps, hypotheses and evaluation controls.
